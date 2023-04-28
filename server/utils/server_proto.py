@@ -57,6 +57,7 @@ class ChatServerProtocol(Protocol, ConvertMixin, DbInterfaceMixin):
 
     def data_received(self, data):
         _data = self._bytes_to_dict(data)
+        print(_data)
         if _data:
             try:
                 if _data['action'] == 'presence':  # received presence msg

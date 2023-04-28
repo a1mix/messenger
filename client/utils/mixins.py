@@ -1,7 +1,7 @@
-from json import dumps, loads
-from server.server_config import ENCODING
-from server.database.controller import ClientMessages
-from server.database.models import CBase
+from json import dumps
+from client.client_config import ENCODING
+from client.database.controller import ClientMessages
+from client.database.models import CBase
 
 
 class DbInterfaceMixin:
